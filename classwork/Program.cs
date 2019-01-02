@@ -12,9 +12,9 @@ namespace classwork
         static void Main(string[] args)
         {
             // Console is a class, WriteLine is a method with a parameter
-            //Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!");
             //MyHouseResults();
-            MyNumericExamples();
+           MyNumericExamples();
         }
 
         static void MyNumericExamples()
@@ -26,6 +26,8 @@ namespace classwork
             Console.WriteLine(something);
 
             Console.WriteLine(myTypes.LongFromInt(5600));
+            myTypes.BasicMath();
+            myTypes.CheckOperators();
         }
 
         static void MyHouseResults()

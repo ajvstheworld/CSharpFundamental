@@ -64,5 +64,36 @@ namespace Lessons
             return total;
         }
 
+        public void BasicMath()
+        { 
+            int myVal = 5, myOtherVal = 10;
+
+            int addVal = myVal + myOtherVal;
+            int subtractVal = myOtherVal - myVal;
+            int multiplyVal = myVal * myOtherVal;
+            int divisionVal = myVal / myOtherVal;
+            int modulusVal = myVal % myOtherVal;
+
+            Console.WriteLine(addVal);
+            Console.WriteLine(subtractVal);
+            Console.WriteLine(multiplyVal);
+            Console.WriteLine(divisionVal);
+            Console.WriteLine(modulusVal);
+        }
+
+        public void CheckOperators()
+        {
+            int test = 100, test2 = 100;
+
+            int testVal = checked(test * test2);
+            checked
+            {
+                // make the value 300000000 to fail.
+                int testAgain = test * 300;
+                Console.WriteLine(testAgain);
+            }
+            Console.WriteLine(testVal);
+        }
+
     }
 }

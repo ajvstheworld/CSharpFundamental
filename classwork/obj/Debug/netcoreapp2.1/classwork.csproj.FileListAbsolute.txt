@@ -1,0 +1,11 @@
+F:\MyRepository\CSharpFundamental\classwork\bin\BNB\Debug\netcoreapp2.1\classwork.deps.json
+F:\MyRepository\CSharpFundamental\classwork\bin\BNB\Debug\netcoreapp2.1\classwork.runtimeconfig.json
+F:\MyRepository\CSharpFundamental\classwork\bin\BNB\Debug\netcoreapp2.1\classwork.runtimeconfig.dev.json
+F:\MyRepository\CSharpFundamental\classwork\bin\BNB\Debug\netcoreapp2.1\classwork.dll
+F:\MyRepository\CSharpFundamental\classwork\bin\BNB\Debug\netcoreapp2.1\classwork.pdb
+F:\MyRepository\CSharpFundamental\classwork\obj\BNB\Debug\netcoreapp2.1\classwork.csprojAssemblyReference.cache
+F:\MyRepository\CSharpFundamental\classwork\obj\BNB\Debug\netcoreapp2.1\classwork.csproj.CoreCompileInputs.cache
+F:\MyRepository\CSharpFundamental\classwork\obj\BNB\Debug\netcoreapp2.1\classwork.AssemblyInfoInputs.cache
+F:\MyRepository\CSharpFundamental\classwork\obj\BNB\Debug\netcoreapp2.1\classwork.AssemblyInfo.cs
+F:\MyRepository\CSharpFundamental\classwork\obj\BNB\Debug\netcoreapp2.1\classwork.dll
+F:\MyRepository\CSharpFundamental\classwork\obj\BNB\Debug\netcoreapp2.1\classwork.pdb
