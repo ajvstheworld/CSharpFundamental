@@ -137,6 +137,8 @@ namespace Lessons
             int val1 = 5, val2 = 10;
             // val1 = val1 + val2
             Console.WriteLine(val1 += val2);
+            // val1 = val1 << val2
+            Console.WriteLine(val1 <<= val2);
         }
 
     }
