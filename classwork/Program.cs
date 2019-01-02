@@ -30,7 +30,7 @@ namespace classwork
 
         static void MyHouseResults()
         {
-            // Created and object instance of House called myHouse
+            // Created an object instance of House called myHouse
             House myHouse = new House();
             // This sets the value of Red to the object
             myHouse.PaintDoor = "Red";
