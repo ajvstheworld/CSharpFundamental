@@ -28,6 +28,8 @@ namespace classwork
             Console.WriteLine(myTypes.LongFromInt(5600));
             myTypes.BasicMath();
             myTypes.CheckOperators();
+            myTypes.IncrementDecrement();        
+            myTypes.SpecialValues();
         }
 
         static void MyHouseResults()

@@ -95,5 +95,33 @@ namespace Lessons
             Console.WriteLine(testVal);
         }
 
+        public void IncrementDecrement()
+        {
+            // myValue = myValue+1
+            int myValue = 13, myOther = 10;
+            myValue++;
+            Console.WriteLine(myValue++);
+            // myOther = myOther - 1;
+            myOther--;
+            Console.WriteLine(myOther--);
+            --myValue;
+            Console.WriteLine(--myValue);
+            ++myOther;
+            Console.WriteLine(++myOther);
+        }
+
+        public void SpecialValues()
+        {
+            Console.WriteLine(2.0 / 0.0);
+            Console.WriteLine(-2.0 / 0.0);
+            Console.WriteLine(2.0 / -0.0);
+            Console.WriteLine(-2.0 / -0.0);
+            Console.WriteLine(0.0 / 0.0);
+            Console.WriteLine((2.0 / -0.0) - (2.0 / 0.0));
+            Console.WriteLine(0.0 / -0.0 == double.NaN);
+            Console.WriteLine(double.IsNaN(0.0 / 0.0));
+            Console.WriteLine(object.Equals(0.0 / 0.0, double.NaN));
+        }
+
     }
 }
