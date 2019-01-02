@@ -123,5 +123,21 @@ namespace Lessons
             Console.WriteLine(object.Equals(0.0 / 0.0, double.NaN));
         }
 
+        public void ComparisonOperators() 
+        {
+            bool isCool = true; //declaration of a bool balue
+            int x = 3, y = 5, z = 3;
+            Console.WriteLine(x == y); // false
+            Console.WriteLine(x != y); // true
+            Console.WriteLine(x == z); // true
+        }
+
+        public void OtherOperators()
+        {
+            int val1 = 5, val2 = 10;
+            // val1 = val1 + val2
+            Console.WriteLine(val1 += val2);
+        }
+
     }
 }

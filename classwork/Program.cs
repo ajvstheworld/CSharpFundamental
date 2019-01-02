@@ -30,6 +30,14 @@ namespace classwork
             myTypes.CheckOperators();
             myTypes.IncrementDecrement();        
             myTypes.SpecialValues();
+            myTypes.ComparisonOperators();
+            myTypes.OtherOperators();
+        }
+
+        static void OtherNumericExamples()
+        {
+            NumericTypes myTypes = new NumericTypes();
+            myTypes.OtherOperators();
         }
 
         static void MyHouseResults()
