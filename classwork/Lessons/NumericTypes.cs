@@ -125,7 +125,7 @@ namespace Lessons
 
         public void ComparisonOperators() 
         {
-            bool isCool = true; //declaration of a bool balue
+            bool isCool = true; //declaration of a bool value
             int x = 3, y = 5, z = 3;
             Console.WriteLine(x == y); // false
             Console.WriteLine(x != y); // true
