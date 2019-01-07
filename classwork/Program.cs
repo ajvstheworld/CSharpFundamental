@@ -24,7 +24,7 @@ namespace classwork
             StringTypes myTypes = new StringTypes();
             myTypes.SampleString();
             myTypes.AddString();
-            string words = myTypes.StringBuilderExample("Hello", "C Sharp", "Class");
+            string words = myTypes.StringBuilderExample("Get", "It", "On");
 
             Console.WriteLine(words);
             myTypes.CharTypeExample();
