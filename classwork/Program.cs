@@ -1,4 +1,4 @@
-using System;
+using System;using System;
 using Lessons;
 /*This namespace represents the file folder that
 the class is in. */
@@ -14,9 +14,9 @@ namespace classwork
             // Console is a class, WriteLine is a method with a parameter
             //Console.WriteLine("Hello World!");
             //MyHouseResults();
-           //MyNumericExamples();
-           //OtherNumericExamples();
-           MyStringExamples();
+            //MyNumericExamples();
+            //OtherNumericExamples();
+            MyStringExamples();
         }
 
         static void MyStringExamples()
@@ -24,11 +24,17 @@ namespace classwork
             StringTypes myTypes = new StringTypes();
             myTypes.SampleString();
             myTypes.AddString();
-           string words = myTypes.StringBuilderExample("Get", "It", "On");
+            string words = myTypes.StringBuilderExample("Hello", "C Sharp", "Class");
 
             Console.WriteLine(words);
             myTypes.CharTypeExample();
+            myTypes.EscapeExample();
+            myTypes.PlaceHolderExample();
+            myTypes.ArraySample();
+            myTypes.MyHouseArray();
+            myTypes.MultiArraySample();
         }
+
         static void MyNumericExamples()
         {
             NumericTypes myTypes = new NumericTypes();
@@ -40,10 +46,10 @@ namespace classwork
             Console.WriteLine(myTypes.LongFromInt(5600));
             myTypes.BasicMath();
             myTypes.CheckOperators();
-            myTypes.IncrementDecrement();        
+            myTypes.IncrementDecrement();
             myTypes.SpecialValues();
             myTypes.ComparisonOperators();
-            myTypes.OtherOperators();
+
         }
 
         static void OtherNumericExamples()
@@ -54,7 +60,7 @@ namespace classwork
 
         static void MyHouseResults()
         {
-            // Created an object instance of House called myHouse
+            // Created and object instance of House called myHouse
             House myHouse = new House();
             // This sets the value of Red to the object
             myHouse.PaintDoor = "Red";
