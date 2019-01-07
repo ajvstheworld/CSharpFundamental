@@ -16,7 +16,32 @@ namespace classwork
             //MyHouseResults();
             //MyNumericExamples();
             //OtherNumericExamples();
-            MyStringExamples();
+            //MyStringExamples();
+            //StatementSamples();
+            BottlesSong();
+        }
+
+        static void StatementSamples ()
+        {
+            //StatementExamples se = new StatementExamples();
+            //se.SampleIf();
+            //se.SampleIfElse();
+            //se.SampleIfChain();
+            //se.SampleIfAnd();
+            //se.SampleIfOr();
+            //se.SampleConditional();
+            //se.SampleSwitch(10);
+            //se.SampleWhile();
+            //se.SampleForEach();
+            //string myString = se.JumpStatementExample("Sunday");
+            //Console.WriteLine(myString);
+        }
+
+        static void BottlesSong()
+        {
+            BottlesOfBeer beer = new BottlesOfBeer();
+            string song = beer.BottlesOfBeerSong();
+            Console.WriteLine(song);
         }
 
         static void MyStringExamples()
