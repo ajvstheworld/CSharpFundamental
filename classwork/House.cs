@@ -39,10 +39,40 @@ namespace classwork
 
         public string PaintDoor { get; set; }
 
+        public House() { }
+
+        public House(string foundation, string window)
+        {
+            this._foundation = foundation;
+            this._window = window;
+            Roof = "shingles";
+            PaintDoor = "Green";
+        }
+
+        public House(string foundation, string window, string roof, string doorPaint)
+        {
+            this._foundation = foundation;
+            this._window = window;
+            Roof = roof;
+            PaintDoor = doorPaint;
+        }
+
         // The following are Methods
         public void OpenDoor()
         {
             Console.WriteLine("The door opens");
+        }
+
+        public void OpenDoor(bool isExterior)
+        {
+            if (isExterior)
+            {
+                Console.WriteLine("Open Front Door.");
+            }
+            else
+            {
+                Console.WriteLine("Open Bedroom Door.");
+            }
         }
 
         public void CloseDoor()

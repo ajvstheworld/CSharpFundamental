@@ -1,4 +1,4 @@
-using System;using System;
+using System;
 using Lessons;
 /*This namespace represents the file folder that
 the class is in. */
@@ -10,20 +10,35 @@ namespace classwork
         /*static is only one, void is a return type
         Main is the method name, string[] is an array and a parameter */
         static void Main(string[] args)
-        {
-            // Console is a class, WriteLine is a method with a parameter
+        {   // Console is a class, WriteLine is a method with a parameter
             //Console.WriteLine("Hello World!");
             //MyHouseResults();
             //MyNumericExamples();
             //OtherNumericExamples();
             //MyStringExamples();
             //StatementSamples();
-            BottlesSong();
+            //BottlesSong();
+            MyVideoGame();
+            //HouseSample();
+            StructSample();
         }
 
-        static void StatementSamples ()
+        static void StructSample()
         {
-            //StatementExamples se = new StatementExamples();
+            BookSample bookSample = new BookSample(4.99m, "Fallout Bible", "Chris Avallone");
+            Console.WriteLine("The book " + bookSample.title + " by " + bookSample.author + " is $" + bookSample.price);
+        }
+        static void HouseSample()
+        {
+            House myHouse = new House("concrete", "triple pane");
+            Console.WriteLine(myHouse.PaintDoor);
+            Console.WriteLine(myHouse.Foundation);
+            myHouse.OpenDoor(true);
+        }
+
+        static void StatementSamples()
+        {
+            StatementExamples se = new StatementExamples();
             //se.SampleIf();
             //se.SampleIfElse();
             //se.SampleIfChain();
@@ -35,6 +50,7 @@ namespace classwork
             //se.SampleForEach();
             //string myString = se.JumpStatementExample("Sunday");
             //Console.WriteLine(myString);
+            se.SampleDays(DaysOfWeek.Wed);
         }
 
         static void BottlesSong()
@@ -97,6 +113,19 @@ namespace classwork
             mySecondHouse.PaintDoor = "green";
             Console.WriteLine(mySecondHouse.PaintDoor); // green
             Console.WriteLine(myHouse.PaintDoor); // red
+        }
+
+        static void MyVideoGame()
+        {
+            VideoGame myVideoGame = new VideoGame();
+            myVideoGame.OpenPlasticCase();
+            myVideoGame.ClosePlasticCase();
+            myVideoGame.EnterDisc();
+            myVideoGame.RemoveDisc();
+            myVideoGame.ApplyCoverArt();
+            myVideoGame.RemoveCoverArt();
+            myVideoGame.ReadManual();
+            myVideoGame.StopReadingManual();
         }
     }
 }
