@@ -42,19 +42,15 @@ namespace classwork
         public House() { }
 
         public House(string foundation, string window)
-        {
-            this._foundation = foundation;
-            this._window = window;
-            Roof = "shingles";
-            PaintDoor = "Green";
-        }
+        : this(foundation, window, "shingles", "Green")
+        { }
 
         public House(string foundation, string window, string roof, string doorPaint)
         {
             this._foundation = foundation;
             this._window = window;
-            Roof = roof;
-            PaintDoor = doorPaint;
+            this.Roof = roof;
+            this.PaintDoor = doorPaint;
         }
 
         // The following are Methods
@@ -71,7 +67,7 @@ namespace classwork
             }
             else
             {
-                Console.WriteLine("Open Bedroom Door.");
+                Console.WriteLine("Open Bedroom door.");
             }
         }
 
