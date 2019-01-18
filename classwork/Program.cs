@@ -81,6 +81,28 @@ namespace classwork
             se.SampleDays(DaysOfWeek.Wed);
         }
 
+        static void AbstractDemo()
+        {
+            TRex trex = new TRex();
+            Triceratops triceratops = new Triceratops();
+
+            trex.EatFood();
+            trex.EatFood();
+            trex.SkinType();
+
+            triceratops.EatFood();
+            triceratops.Move();
+            triceratops.Teeth();
+        }
+
+        static void Lesson12()
+        {
+            double temp = Utilities.CelsiusToFahrenheit("43.2");
+            double temp2 = Utilities.FahrenheitToCelsius("109.76");
+            Console.WriteLine(temp);
+            Console.WriteLine(temp2);
+        }
+
         static void BottlesSong()
         {
             BottlesOfBeer beer = new BottlesOfBeer();
