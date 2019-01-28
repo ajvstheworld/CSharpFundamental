@@ -32,7 +32,28 @@ namespace classwork
             //FinalizerSample();
             //IndexerSample();
             //PartialSample();
-            AnotherHouseExample();
+            //AnotherHouseExample();
+            CollectionSample();
+        }
+
+        static void CollectionSample()
+        {
+            CollectionExamples ce = new CollectionExamples();
+            ce.MyArrayListExample();
+        }
+
+        static void GenericSample()
+        {
+            GenericList<int> myList = new GenericList<int>();
+            myList.Add(10);
+
+            GenericList<string> mySecondList = new
+            GenericList<string>();
+            mySecondList.Add("Happy");
+
+            GenericList<TRex> myTrexList = new
+            GenericList<TRex>();
+            myTrexList.Add(new TRex());
         }
 
         static void AnotherHouseExample()
