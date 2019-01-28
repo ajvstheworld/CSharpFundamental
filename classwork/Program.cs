@@ -23,7 +23,120 @@ namespace classwork
             //HouseSample();
             //StructSample();
             //QuizWork1();
-            FruitSample();
+            //FruitSample();
+            // ParamsSample();
+            // ModifierExamples();
+            // Lesson12();
+            //AbstractDemo();
+            //DeconstructSample();
+            //FinalizerSample();
+            //IndexerSample();
+            //PartialSample();
+            AnotherHouseExample();
+        }
+
+        static void AnotherHouseExample()
+        {
+            House myHouse = new House()
+            {
+                Roof = "Shingles",
+                Window = "Double Pane",
+                PaintDoor = "Red",
+                Foundation = "Concrete"
+            };
+
+            Console.WriteLine("My windows choice is {0}", myHouse.Window);
+        }
+
+        static void PartialSample()
+        {
+            Pear pear = new Pear("Yellow");
+        }
+
+        static void IndexerSample()
+        {
+            IndexerExample indexerExample = new IndexerExample();
+
+            indexerExample[2] = 250;
+
+            for (int i = 0; i < indexerExample.Length; i++)
+            {
+                Console.WriteLine("Value {0} = {1}", i, indexerExample[i]);
+
+            }
+        }
+
+        static void FinalizerSample()
+        {
+            FinalizerExample finalExample = new FinalizerExample("John", "Doe");
+
+        }
+
+        static void DeconstructSample()
+        {
+            string first = "Tom", last = "Jones";
+
+            Lesson13 lesson13 = new Lesson13("John", "Doe");
+
+            Console.WriteLine("First Name = {0} and Last Name = {1}", first, last);
+
+            lesson13.Deconstruct(out first, out last);
+
+            Console.WriteLine("First Name = {0} and Last Name = {1}", first, last);
+        }
+
+        static void AbstractDemo()
+        {
+            TRex trex = new TRex();
+            Triceratops triceratops = new Triceratops();
+
+            trex.EatFood();
+            trex.Move();
+            trex.SkinType();
+
+            triceratops.EatFood();
+            triceratops.Move();
+            triceratops.Teeth();
+        }
+
+        static void Lesson12()
+        {
+            double temp = Utilities.CelsiusToFahrenheit("43.2");
+            double temp2 = Utilities.FahrenheitToCelsius("109.76");
+            Console.WriteLine(temp);
+            Console.WriteLine(temp2);
+        }
+
+        static void ModifierExamples()
+        {
+            int test = 14;
+            Lesson11 myLesson = new Lesson11();
+            myLesson.RefSample(ref test);
+            Console.WriteLine(test);
+
+            string first, second, middle;
+            myLesson.OutSample("John Doe Riley", out first, out second, out middle);
+
+            Console.WriteLine(first);
+            Console.WriteLine(second);
+            Console.WriteLine(middle);
+        }
+
+        static void ParamsSample()
+        {
+            Lesson11 lesson = new Lesson11();
+            lesson.UseParams(10, 3, 24, 36, 45, 120);
+
+            lesson.UseParams();
+
+            int[] intArray = { 2, 3, 4, 5, 6 };
+            lesson.UseParams(intArray);
+
+            lesson.UseParams2(1, "Happy", false, 34.5F);
+
+            lesson.OptionalParam("Roger");
+            lesson.OptionalParam("Matthew", 19);
+
         }
 
         static void FruitSample()
@@ -79,28 +192,6 @@ namespace classwork
             //string myString = se.JumpStatementExample("Sunday");
             //Console.WriteLine(myString);
             se.SampleDays(DaysOfWeek.Wed);
-        }
-
-        static void AbstractDemo()
-        {
-            TRex trex = new TRex();
-            Triceratops triceratops = new Triceratops();
-
-            trex.EatFood();
-            trex.EatFood();
-            trex.SkinType();
-
-            triceratops.EatFood();
-            triceratops.Move();
-            triceratops.Teeth();
-        }
-
-        static void Lesson12()
-        {
-            double temp = Utilities.CelsiusToFahrenheit("43.2");
-            double temp2 = Utilities.FahrenheitToCelsius("109.76");
-            Console.WriteLine(temp);
-            Console.WriteLine(temp2);
         }
 
         static void BottlesSong()

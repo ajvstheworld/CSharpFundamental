@@ -3,6 +3,8 @@ namespace Lessons
 {
     public abstract class Dinosaur : IPrehistoric
     {
+        public string Travel { get; set; } = "Walk";
+
         public abstract void EatFood();
 
         public virtual void Move()
@@ -11,6 +13,9 @@ namespace Lessons
         }
 
         public abstract void SkinType();
+
         public abstract void Teeth();
+
+
     }
 }
