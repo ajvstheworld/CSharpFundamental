@@ -10,8 +10,7 @@ namespace classwork
     {
         /*static is only one, void is a return type
         Main is the method name, string[] is an array and a parameter */
-        static void Main(string[] args)
-        {   // Console is a class, WriteLine is a method with a parameter
+        static void Main(string[] args) =>
             //Console.WriteLine("Hello World!");
             //MyHouseResults();
             //MyNumericExamples();
@@ -33,9 +32,16 @@ namespace classwork
             //IndexerSample();
             //PartialSample();
             //AnotherHouseExample();
-            CollectionSample();
-        }
+            //CollectionSample();
+            LabResults();
 
+        static void LabResults()
+        {
+            LabResults myLab = new LabResults();
+            myLab.Method1();
+            myLab.Method2();
+            myLab.Method3();
+        }
         static void CollectionSample()
         {
             CollectionExamples ce = new CollectionExamples();
